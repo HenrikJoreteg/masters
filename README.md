@@ -28,8 +28,12 @@ This repo is for the workshop on "Building Modern Single-Page Web Applications" 
 
 - Short intro talk
 - Project setup
+- Discuss node, npm, hjs-webpack
 - Render basic "hello" content with React
 - Intro to React.js
+- show build step
+
+** frameworks talk/discussion **
 
 - Adding styles
     - show yeticss.com
@@ -37,30 +41,32 @@ This repo is for the workshop on "Building Modern Single-Page Web Applications" 
     - import yeticss.com
     - show what happens when you build now
     - show live reloading in action
-
 - Convert ES5 React module to ES6
     - compare them side-by-side
 
-**frameworks talk/discussion**
+**10:30 - 11:00 morning break**
 
 - Install and use the router
     - public and 'repos' routes
     - start with console.log routes
     - React.render inside method
-
+    - re-deploy
 - Introduce ampersand-app pattern
     - demo event signaling via app
-
 - Add layout.js
-
 - Local links/Internal Nav Component
 
+**12:30 - 1:45 Lunch Break**
+
 - Authing with GitHub
+    - Understanding Standard OAuth Flows
+    - Keeping a "secret" in a static clientside app
+    - Gatkeeper Microservice
 - Persisting token, modeling 'me'
-- fetching me from github
+- Fetching "me" from github
 - Binding username
 
-**Lunch Break somewhere in here**
+**3:15 - 3:45 Afternoon Break**
 
 - Rendering list of Repos
 - Repo Detail Page
@@ -68,25 +74,35 @@ This repo is for the workshop on "Building Modern Single-Page Web Applications" 
 - Creating a Label component
 - Adding Octicons
 
+## Day 2
+
+**9:00 Start**
+
 - Editing Mode for Labels
 - Deleting Labels
 - Updating Labels
 - Creating New Labels
 
-- Cleanup, Optimization, Bug Fixes
+**10:30 - 11:00 morning break**
+
 - Configs and Deploys
+- Deploying with Surge
 - Adding A 404 Page
+
+**12:30 - 1:45 Lunch Break**
+
 - Static Isomorphic Rendering
 - Using Standard for Code Style
 
+**3:15 - 3:45 Afternoon Break**
+
+- wrap up discussion
+- open questions
+- open hacking (see suggestions below)
 
 ## Taking it further
 
-Hard to say how much we'll get through in the class, but following along is one thing, but tackling something on your own is quite another. 
-
 I'd encourage you to keep hacking on this and finish whatever features we didn't build. 
-
-A more "complete" version of this app is available here for reference: https://github.com/henrikjoreteg/hubtags.com 
 
 In addition, you may want to try adding the following: 
 
@@ -97,12 +113,7 @@ In addition, you may want to try adding the following:
 - Write module that fetches "all" repos (using github paging API)
 - Add color picker?
 
-
 ## Further study
-
-Want this content in video form for you or someone you know? It's available online here: http://learn.humanjavascript.com/react-ampersand
-
-The code `workshopper` will take $20 off. Feel free to share it with co-workers or friends.
 
 - [My Book, Human JavaScript](http://humanjavascript.com)
 - [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
