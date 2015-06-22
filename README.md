@@ -120,7 +120,6 @@ In addition, you may want to try adding the following:
 - [Reusable React Components](https://facebook.github.io/react/docs/reusable-components.html)
 - [Standard Linter](https://github.com/feross/standard)
 - [Setting up ESLint, React and ES6](https://medium.com/@dan_abramov/lint-like-it-s-2015-6987d44c5b48)
-- [Labelr Demo App Source](https://github.com/HenrikJoreteg/labelr)
 - [Complete HubTags.com Source](https://github.com/henrikjoreteg/hubtags.com)
 
 
