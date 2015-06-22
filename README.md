@@ -125,6 +125,8 @@ In addition, you may want to try adding the following:
 
 ## Feedback
 
+Honest feedback is golden. Please take a minute to say what you liked/what you didn't: http://j.mp/masters-feedback
+
 If you liked it maybe even tweet about it :) I'm [@HenrikJoreteg](http://twitter.com/henrikjoreteg) on twitter. 
 
 <3
