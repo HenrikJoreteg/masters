@@ -72,6 +72,12 @@ header
 
 ```
 
+Repo Item
+```
+<div>
+  <a href=""><span className='octicon octicon-repo'></span></a>
+</div>
+```
 
 Repo Detail
 
