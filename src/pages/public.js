@@ -1,9 +1,10 @@
 import React from 'react'
+import NavHelper from '../components/nav-helper'
 
 export default React.createClass({
   render () {
     return (
-      <div className='container'>
+      <NavHelper className='container'>
         <header role='banner'>
           <h1>Labelr</h1>
         </header>
@@ -13,7 +14,7 @@ export default React.createClass({
             <span className='mega-octicon octicon-mark-github'></span> Login with GitHub
           </a>
         </div>
-      </div>
+      </NavHelper>
     )
   }
 })
