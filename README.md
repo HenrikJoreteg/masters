@@ -69,15 +69,15 @@ This repo is for the workshop on "Building Modern Single-Page Web Applications" 
 **3:15 - 3:45 Afternoon Break**
 
 - Rendering list of Repos
-- Repo Detail Page
-- Rendering The Labels
-- Creating a Label component
 - Adding Octicons
 
 ## Day 2
 
 **9:00 Start**
 
+- Repo Detail Page
+- Rendering The Labels
+- Creating a Label component
 - Editing Mode for Labels
 - Deleting Labels
 - Updating Labels
