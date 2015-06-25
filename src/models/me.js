@@ -1,6 +1,7 @@
 import Model from 'ampersand-model'
+import githubMixin from '../helpers/github-mixin'
 
-export default Model.extend({
+export default Model.extend(githubMixin, {
   url: 'https://api.github.com/user',
 
   initialize () {
@@ -21,16 +22,6 @@ export default Model.extend({
   onTokenChange () {
     window.localStorage.token = this.token
     this.fetchInitialData()
-  },
-
-  ajaxConfig () {
-    console.log(this.token)
-
-    return {
-      headers: {
-        Authorization: 'token ' + this.token
-      }
-    }
   },
 
   fetchInitialData () {
