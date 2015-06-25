@@ -14,6 +14,8 @@ export default Collection.extend(githubMixin, {
       model = new Repo({full_name: fullName})
     }
 
+    model.fetch()
+
     return model
   }
 })

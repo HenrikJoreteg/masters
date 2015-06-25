@@ -1,6 +1,10 @@
 import Model from 'ampersand-model'
 
 export default Model.extend({
+  url () {
+    return 'https://api.github.com/repos/' + this.full_name
+  },
+
   props: {
     id: 'number',
     name: 'string',
