@@ -1,5 +1,4 @@
 import React from 'react'
-import app from 'ampersand-app'
 import ampersandMixin from 'ampersand-react-mixin'
 import NavHelper from './components/nav-helper'
 
