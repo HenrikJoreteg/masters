@@ -16,7 +16,7 @@ export default React.createClass({
         <p></p>
         <ul>
           {labels.map((label) => {
-            return <LabelItem label={label}/>
+            return <LabelItem key={label.name} label={label}/>
           })}
         </ul>
       </div>
