@@ -8,7 +8,7 @@ module.exports = getConfig({
 	in: 'src/app.js',
   out: 'public',
   clearBeforeBuild: true,
-  html: function (context, cb) {
+  html: function (context) {
     const publicPage = React.renderToString(React.createElement(PublicPage))
     const layoutPage = React.renderToString(React.createElement(Layout, {me: {}}))
 
