@@ -7,6 +7,8 @@ import PublicPage from './pages/public'
 import ReposPage from './pages/repos'
 import RepoDetail from './pages/repo-detail'
 import Layout from './layout'
+import MessagePage from './pages/message'
+import config from './config'
 
 function requiresAuth (handlerName) {
   return function () {
@@ -37,7 +39,8 @@ export default Router.extend({
     'login': 'login',
     'logout': 'logout',
     'repo/:owner/:name': requiresAuth('repoDetail'),
-    'auth/callback?:query': 'authCallback'
+    'auth/callback?:query': 'authCallback',
+    '*fourOhfour': 'fourOhfour'
   },
 
   public () {
@@ -55,7 +58,7 @@ export default Router.extend({
 
   login () {
     window.location = 'https://github.com/login/oauth/authorize?' + qs.stringify({
-      client_id: 'f8dd69187841cdd22a26',
+      client_id: config.clientId,
       redirect_uri: window.location.origin + '/auth/callback',
       scope: 'user,repo'
     })
@@ -66,18 +69,24 @@ export default Router.extend({
     console.log(query)
 
     xhr({
-      url: 'https://labelr-localhost.herokuapp.com/authenticate/' + query.code,
+      url: config.authUrl + '/' + query.code,
       json: true
     }, (err, req, body) => {
       console.log(body)
       app.me.token = body.token
       this.redirectTo('/repos')
     })
+
+    this.renderPage(<MessagePage title='Fetching your data'/>)
   },
 
   logout () {
     window.localStorage.clear()
     window.location = '/'
+  },
+
+  fourOhfour () {
+    this.renderPage(<MessagePage title='Not Found' body='sorry nothing here'/>)
   }
 })
 
