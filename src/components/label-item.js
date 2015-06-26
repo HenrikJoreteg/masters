@@ -12,6 +12,7 @@ export default React.createClass({
   onCancelClick (event) {
     event.preventDefault()
     this.props.label.editing = false
+    this.setState(this.getInitialState())
   },
 
   onEditClick (event) {
