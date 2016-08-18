@@ -33,7 +33,7 @@
     "slugger": "^1.0.0",
     "standard": "^4.3.1",
     "style-loader": "^0.12.3",
-    "stylus-loader": "^1.2.1",
+    "stylus-loader": "2.0.0",
     "surge": "^0.14.2",
     "url-loader": "^0.5.6",
     "webpack": "^1.9.11",
