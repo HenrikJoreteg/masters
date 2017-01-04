@@ -2,7 +2,7 @@
 
 This repo is for the workshop on "Building Modern Single-Page Web Applications" workshop at [Frontend Masters, June 2015](https://frontendmasters.com/workshops/web-apps/).
 
-**note:** the "master" branch contains the *completed* application. If you're just staring the video course you want to start with what's in the "start" branch. To do so, do this:
+**note:** the "master" branch contains the *completed* application. If you're just starting the video course you want to start with what's in the "start" branch. To do so, do this:
 
 ```
 git clone https://github.com/HenrikJoreteg/masters.git
